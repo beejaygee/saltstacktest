@@ -1,3 +1,3 @@
 main:
   '*':
-    - firefox
+    - git
