@@ -1,3 +1,3 @@
 main:
   '*':
-    - winsw.firefox
+    - firefox
