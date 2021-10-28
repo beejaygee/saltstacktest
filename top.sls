@@ -1,3 +1,2 @@
-base:
-  '*':
-    - winsw.firefox
+ '*':
+  - winsw.firefox
