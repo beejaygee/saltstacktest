@@ -1,3 +1,3 @@
 main:
   '*':
-    - firefox
+    - firefox_x64
