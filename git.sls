@@ -5,5 +5,5 @@ git_x64:
     msiexec: False
     install_flags: '/VERYSILENT /NORESTART /SP- /NOCANCEL'
     reboot: False
-    uninstaller: '%ProgramFiles%/Git/unins000.exe'
+    uninstaller: '%ProgramFiles%\Git\unins000.exe'
     uninstall_flags: '/VERYSILENT /NORESTART'
