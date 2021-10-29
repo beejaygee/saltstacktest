@@ -7,3 +7,6 @@ app-git-x64-install:
   cmd.run:
     - creates: 'C:\Program Files\Git\bin\git.exe'
     - name: '"C:\ProgramData\Git-2.33.1-64-bit.exe" /VERYSILENT /NORESTART /SP- /NOCANCEL /SUPPRESSMSGBOXES'
+app-git-x64-cleanup:
+  file.absent:
+    - name: 'C:\ProgramData\Git-2.33.1-64-bit.exe'
