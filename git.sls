@@ -7,7 +7,3 @@ git_x64:
     reboot: False
     uninstaller: '%ProgramFiles%/Git/unins000.exe'
     uninstall_flags: '/VERYSILENT /NORESTART'
-install_git_x64:
-  pkg.installed:
-    - name: git_x64
-    - version: 2.33.1
