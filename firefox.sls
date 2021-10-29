@@ -1,3 +1,3 @@
 install_firefox:
   pkg.installed:
-    - name: firefox
+    - name: firefox_x64
