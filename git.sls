@@ -1,12 +1,7 @@
-app-git-x64-download:
-  file.managed:
-    - name: 'C:\ProgramData\Git-2.33.1-64-bit.exe'
-    - source: 'https://github.com/git-for-windows/git/releases/download/v2.33.1.windows.1/Git-2.33.1-64-bit.exe'
-    - source_hash: b1b69fcf56d50199536f7e6fc79b75ab16734d4d9a4b85c8e931596f02dd0688
-app-git-x64-install:
-  cmd.run:
-    - creates: 'C:\Program Files\Git\bin\git.exe'
-    - name: '"C:\ProgramData\Git-2.33.1-64-bit.exe" /VERYSILENT /NORESTART /SP- /NOCANCEL /SUPPRESSMSGBOXES'
-app-git-x64-cleanup:
-  file.absent:
-    - name: 'C:\ProgramData\Git-2.33.1-64-bit.exe'
+git_x64:
+  '2.33.1':
+    full_name: Git
+    installer: 'https://download-installer.cdn.mozilla.net/pub/firefox/releases/74.0/win64/en-US/Firefox%20Setup%2074.0.exe'
+    install_flags: '/VERYSILENT /NORESTART /SP- /NOCANCEL'
+    uninstaller: '%ProgramFiles%/Git/unins000.exe'
+    uninstall_flags: '/VERYSILENT /NORESTART'
