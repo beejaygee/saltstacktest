@@ -1,3 +1,4 @@
 main:
   '*':
     - firefox
+    - chrome
