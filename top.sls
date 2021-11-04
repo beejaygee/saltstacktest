@@ -2,4 +2,4 @@ main:
   '*':
     - chocolatey
     - firefox
-    - chrome
+    - chromium
