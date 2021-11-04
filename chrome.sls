@@ -1,3 +1,3 @@
 install_chrome:
-  pkg.installed:
+  chocolatey.installed:
     - name: chrome
